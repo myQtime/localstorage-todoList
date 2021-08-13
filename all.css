@@ -1,0 +1,28 @@
+body{
+    font-family:'Press Start 2P', cursive;
+}
+.main{
+    width: 70%;
+    margin: auto;
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+}
+
+.listPart{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+#textID{
+    width: 60%;
+}
+
+.sendBtn{
+    font-size: 8px;
+}
+
+.list li{
+    margin-top: 8px;
+}
