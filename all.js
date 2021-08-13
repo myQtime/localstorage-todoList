@@ -1,19 +1,19 @@
-let send =document.querySelector(".sendBtn");
-let text =document.getElementById("textID");
-let list = document.querySelector(".list");
+const send =document.querySelector(".sendBtn");
+const text =document.getElementById("textID");
+const list = document.querySelector(".list");
 const data = JSON.parse(localStorage.getItem("datastring")) || [];
 
 
 function init(){
     let str ="";
-    // if(data.length==0){return}
-    // else if(data.length!=0){
+    if(data.length==0){}
+    else if(data.length!=0){
         data.forEach(function(item,index){
         str+=`<li><button type="button" class="nes-btn is-error" data-num="${index}">Delete</button><span>  ${item}</span></li>`;
     })}
 
 list.innerHTML= str;
-// }
+}
 
 
 function AddTodo(){
