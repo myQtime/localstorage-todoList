@@ -1,7 +1,7 @@
 let send =document.querySelector(".sendBtn");
 let text =document.getElementById("textID");
 let list = document.querySelector(".list");
-let data = JSON.parse(localStorage.getItem("datastring")) || [];
+const data = JSON.parse(localStorage.getItem("datastring")) || [];
 
 
 function init(){
