@@ -1,11 +1,10 @@
 let send =document.querySelector(".sendBtn");
 let text =document.getElementById("textID");
 let list = document.querySelector(".list");
-let data = [];
+let data = JSON.parse(localStorage.getItem("datastring")) || [];
 
 
 function init(){
-    data= JSON.parse(localStorage.getItem("datastring"))
     let str ="";
     if(data===[]){return}
     data.forEach(function(item,index){
