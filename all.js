@@ -6,14 +6,14 @@ const data = JSON.parse(localStorage.getItem("datastring")) || [];
 
 function init(){
     let str ="";
-    if(data.length==0){return}
-    else if(data.length!=0){
+    // if(data.length==0){return}
+    // else if(data.length!=0){
         data.forEach(function(item,index){
         str+=`<li><button type="button" class="nes-btn is-error" data-num="${index}">Delete</button><span>  ${item}</span></li>`;
     })}
 
 list.innerHTML= str;
-}
+// }
 
 
 function AddTodo(){
