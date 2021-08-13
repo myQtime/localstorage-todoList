@@ -7,6 +7,7 @@ let data = [];
 function init(){
     data= JSON.parse(localStorage.getItem("datastring"))
     let str ="";
+    if(data===[]){return}
     data.forEach(function(item,index){
         str+=`<li><button type="button" class="nes-btn is-error" data-num="${index}">Delete</button><span>  ${item}</span></li>`;
     })
